@@ -55,6 +55,7 @@ class MinMaxQuantization(Algorithm):
                        os.path.join(self._config.get('exec_log_dir'), 'optimized'),
                        model_name=model.name)
         return model
+        
 
     def register_statistics(self, model, stats_collector):
         model = deepcopy(model)
